@@ -62,10 +62,4 @@ jobs:
         with:
           toolchain: stable
           override: true
-
-      - name: Run cargo-tarpaulin
-        uses: actions-rs/tarpaulin@v.1
-        with:
-          args: '--ignore-tests'
-          version: 0.22.0
     
