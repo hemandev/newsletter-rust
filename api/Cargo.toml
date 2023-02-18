@@ -1,0 +1,20 @@
+[package]
+name = "api"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+rand = "0.8.5"
+actix-web = "4"
+serde_json = "1.0.93"
+cargo-expand = "1.0.40"
+reqwest = "0.11.14"
+tokio = { workspace = true }
+serde = {workspace = true}
+sea-orm = {workspace = true}
+config = {workspace = true}
+migration = { path = "../migration" }
+entity = { path = "../entity" }
